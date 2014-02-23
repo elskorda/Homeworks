@@ -110,8 +110,37 @@
 % the table of contents is only updated when you run "pdflatex" twice 
 
 \tableofcontents
-\newpage 
-\section{Μέρος Πρώτο }
-\section{Μέρος Δεύτερο }
-\section{Βιβλιογραφία }
+\newpage
+
+
+%-----------------------------------------
+%eisagwgh
+\input{eisagwgn.tex}
+\pagebreak
+
+
+%---------------------
+%    bibliografia 
+%---------------------
+
+\begin{thebibliography}{9}
+
+\bibitem{traxanas}
+  Στέφανος Λ.Τραχανάς,
+  \emph{Σχετικιστική Κβαντομηχανική},
+  Πανεπιστημιακές Εκδόσεις Κρήτης, 1999.
+  %---------------------------------------------
+\selectlanguage{english}
+
+\bibitem{greiner}
+   w. Greiner,
+  \emph{Relativistic Quantum Mechanichs Wave equations},
+  Springer-Verlag,1994.
+%----------------------
+\bibitem{sakurai}
+   J.J. Sakurai,
+  \emph{Advanced Quantum Mechanics},
+  Mass., 1967.
+\end{thebibliography}
+
 \end{document}
