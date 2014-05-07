@@ -1,1 +1,92 @@
 \section{Εξίσωση \textlatin{Klein-Gordon}}
+
+\subsection{Εξίσωση \textlatin{Klein-Gordon} για ελεύθερο σωματίδιο}
+Για τον υπολογισμό της εξίσωσης \textlatin{Klein-Gordon} αρκεί να αντικατασταθούν οι τελεστές ενέργειας και ορμής (\ref{energeiaormi}) στην (\ref{genrel}): 
+
+\begin{align}
+ \notag (i\hbar \party{}{t} )^2 &= (-i\hbar \nabla)^2 c^2 +m_0 ^2 c^4
+  \\ -\hbar^2 \party{^2}{t^2} &= -\hbar^2 \nabla^2 c^2 +m_0^2 c^4 
+  \label{kg1} 
+\end{align}
+
+Για $\hbar=c=1$: 
+
+\[
+\lbr \party{^2}{t^2}-\nabla^2 \rbr \Psi +m_0^2 \Psi = 0
+\]
+
+Ο πρώτος όρος του αριστερού μέρους είναι η γνωστη ντ'αλαμπερσιανή $\Box = (\party{^2}{t^2}-\nabla^2) $. Επομένως η εξίσωση παίρνει την τελική μορφή: 
+
+\[
+  \Box \Psi +m_0^2 \Psi = 0  
+\]
+
+Η εξίσωση (\ref{kg1}) μπορεί να γραφτεί και με τανυστική μορφή, αν στην(\ref{genrel2})  αντικατασταθεί το τετραδιάνυσμα της ορμής. Ισχύει ότι : 
+
+\[ 
+{p}^\mu {p}_\mu=-\hbar^2 \party{}{x^\mu}\party{}{x_\mu}=\frac{1}{c^2} \party{^2}{t^2} -\nabla
+\]
+
+Επομένως η εξίσωση \textlatin{Klein-Gordon} για ελεύθερο σωματίδιο και για $\hbar = c = 1 $ γράφεται: 
+
+\begin{equation}
+  {p}^\mu {p}_\mu \Psi +m_0^2 \Psi = 0
+  \label{kg2}
+\end{equation}
+%----------------------------------------
+%    new subsection
+%----------------------------------------
+\subsection{Εξίσωση συνέχειας και τετραδιάνυσμα ρεύματος για ελεύθερο σωματίδιο}  
+
+Για να υπολογιστεί η μορφή του τετραδιάνυσμα του ρεύματος, υπολογίζεται αρχικά το συζυγές της (\ref{kg1}) :
+
+\[
+\lbr \hbar^2 \party{^2}{t^2}- \hbar^2 c^2 \nabla^2 \rbr \Psi^* +m_0^2 c^4 \Psi^* = 0
+\]
+
+Κατόπιν η παραπάνω σχέση πολλαπλασιάζεται από τα αριστερά με $\Psi$ και η (\ref{kg1}) από τα αριστερά, πάλι, με $\Psi^*$. Η διαφορά των σχέσεων σχέσεων αυτών δίνει: 
+
+\begin{align*}
+  \Psi^* \lbr  \hbar^2 \party{^2}{t^2}- \hbar^2 c^2 \nabla^2 \rbr \Psi +\Psi^* m_0^2 \Psi - \Psi \lbr \hbar^2\party{^2}{t^2}- \hbar^2 c^2 \nabla^2 \rbr \Psi^* -\Psi m_0^2 c^4 \Psi^* &= 0 \Rightarrow
+  \\ \hbar^2\Psi^* \party{^2}{t^2} \Psi - \hbar^2 c^2\Psi^* \nabla^2\Psi +\Psi^* c^4 m_0^2 \Psi - \Psi \hbar^2\party{^2}{t^2}\Psi^* + \hbar^2 c^2 \Psi \nabla^2 \Psi^* + \Psi c^4  m_0^2 \Psi^* &= 0 \Rightarrow
+\end{align*}
+
+\[
+ \frac{1}{c^2}\Psi^* \party{^2}{t^2} \Psi - \Psi^* \nabla^2\Psi  - \frac{1}{c^2} \Psi \party{^2}{t^2}\Psi^* + \Psi \nabla^2 \Psi^* = 0 \Rightarrow
+\]
+
+\[
+ \frac{1}{c^2} \lbr \Psi^* \party{^2}{t^2} \Psi - \Psi \party{^2}{t^2}\Psi^* \rbr = \Psi^* \nabla^2\Psi- \Psi \nabla^2 \Psi^*  \Rightarrow
+\]
+
+\[ 
+\frac{1}{c^2} \lbr \Psi^* \party{^2}{t^2} \Psi + \party{\Psi^*}{t} \party{\Psi}{t}-\party{\Psi^*}{t} \party{\Psi}{t}- \Psi \party{^2}{t^2}\Psi^* \rbr = \Psi^* \nabla^2\Psi- \Psi \nabla^2 \Psi^*  \Rightarrow
+\]
+
+\[
+ \frac{1}{c^2} \lsbr \party{}{t} \lbr \Psi^* \party{\Psi}{t} - \Psi\party{\Psi^*}{t} \rbr \rsbr = \Psi^* \nabla^2\Psi- \Psi \nabla^2 \Psi^*  
+\]
+
+\[
+\frac{1}{c^2} \lsbr \party{}{t} \lbr \Psi^* \party{\Psi}{t} - \Psi\party{\Psi^*}{t} \rbr \rsbr = \Psi^* \nabla^2\Psi- \Psi \nabla^2 \Psi^*+\nabla \Psi^* \nabla \Psi-  \nabla \Psi^* \nabla \Psi  
+\]
+
+\begin{equation}
+ \frac{1}{c^2} \lsbr \party{}{t} \lbr \Psi^* \party{\Psi}{t} - \Psi\party{\Psi^*}{t} \rbr \rsbr = \nabla \lbr \Psi^* \nabla \Psi- \Psi \nabla \Psi^* \rbr  
+ \label{fineqfree}
+\end{equation}
+
+Συγκρίνοντας την εξίσωση συνέχειας (\ref{contineq}) με την προηγούμενη προκύπτει: 
+
+\begin{align}
+  \notag \rho &= \frac{1}{c^2} \lbr \Psi^* \party{\Psi}{t} - \Psi\party{\Psi^*}{t} \rbr   &\vec{J}= \Psi^* \nabla \Psi- \Psi \nabla \Psi^*   \Rightarrow
+  \\  \rho &= \frac{i\hbar}{2mc^2} \lbr \Psi^* \party{\Psi}{t} - \Psi\party{\Psi^*}{t} \rbr   &\vec{J}= \frac{i\hbar}{2m}\Psi^* \nabla \Psi- \Psi \nabla \Psi^*   
+  \label{currentfree}
+\end{align}
+
+ Kαι τα τα δύο μέλη της (\ref{fineqfree}) πολλαπλασιάστηκαν με $\frac{i \hbar}{2m}$ ώστε το $\rho$ της (\ref{currentfree}) να έχει διαστάσεις πυκνότητας πιθανότητας.
+%----------------------------------------
+%    new subsection
+%----------------------------------------
+\subsection{Εξίσωση \textlatin{Klein-Gordon} παρουσία ηλεκτρομαγνητικού πεδίου}
+\subsection{Εξίσωση συνέχειας και τετραδιάνυσμα ρεύματος παρουσία διανυσματικου δυναμικού $A^\mu$}  
