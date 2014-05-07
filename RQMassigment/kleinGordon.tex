@@ -89,4 +89,53 @@
 %    new subsection
 %----------------------------------------
 \subsection{Εξίσωση \textlatin{Klein-Gordon} παρουσία ηλεκτρομαγνητικού πεδίου}
+
+Στην περίπτωση που υπάρχει παρουσία διανυσματικού πεδίου, στους τελεστές ενέργειας και ορμής (\ref{energeiaormi}) εισάγονται τα δυναμικά $\vec{A}$ και $\phi$ έτσι ώστε ο τρόπος εκλογής τους να μην έχει φυσική σημασία. Η διαδικασία αυτή γνωστή και ως ελάσσονα αντικατάσταση: 
+
+\begin{align} 
+  E & \rightarrow i\hbar \party{}{t} -q\phi  &\vec{p} \rightarrow -i \hbar \nabla-q\vec{A}
+  \label{energeiaormi2}
+\end{align} 
+
+Με τανυστική μορφή μπορεί ο παραπάνω μετασχηματισμός γράφεται : 
+
+\begin{align}
+  p^\mu & \rightarrow p^\mu-qA^\mu,    &p_\mu \rightarrow p_\mu-qA_\mu
+  \label{tensormin}
+\end{align}
+
+Η εξίσωση για το ελεύθερο σωματίδιο, σύμφωνα με τα παραπάνω , μετασχηματίζεται παρουσία πεδιου(για $\hbar=c=1$, και γράφεται ως εξής : 
+
+\[
+\lbr i \party{}{t}-q\phi \rbr ^2 \Psi = \lbr -i \nabla -q\vec{A} \rbr ^2 +m_0^2 
+\label{kgfield} 
+\]
+
+Η τανυστική μορφή της παραπάνω εξίσωσης, προκύπτει αν στην (\ref{kg2}) αντικατασταθεί η (\ref{tensormin}): 
+
+\begin{align}
+  \notag &\lbr p^\mu-\frac{q}{c}A^\mu \rbr \lbr {p}_\mu-\frac{q}{c}A_\mu \rbr \Psi +m_0^2 c^2 \Psi = 0 \Rightarrow
+  \\  &\lsbr g^{\mu\nu} \lbr i \hbar\party{}{x^\nu}-\frac{q}{c}A_\nu \rbr \lbr i \hbar\party{}{x^\mu}-\frac{q}{c}A_\mu \rbr\rsbr \Psi+m_0^2 c^2 \Psi  =0 
+  \label{eqn1}
+\end{align}
+
 \subsection{Εξίσωση συνέχειας και τετραδιάνυσμα ρεύματος παρουσία διανυσματικου δυναμικού $A^\mu$}  
+
+Για την μελέτη των πυκνοτήτων ρεύματος και φορτίου , ακολουθείται παρόμοια  διαδικασία  με της παραγράφου 3.2. Συγκεκριμένα, η \ref{eqn1} θα πολλαπλασιαστεί από τα αριστερά με $\Psi^*$ και κατόπιν υπολογίζεται το συζυγές της. 
+
+\begin{align}
+ \notag &\Psi^* \lsbr g^{\mu\nu} \lbr i \hbar\party{}{x^\nu}-\frac{q}{c}A_\nu \rbr \lbr i \hbar\party{}{x^\mu}-\frac{q}{c}A_\mu \rbr\rsbr \Psi + \Psi^* m_0^2 c^2 \Psi=0 &\Rightarrow
+ \\\notag  &\left\{ \Psi^* \lsbr g^{\mu\nu} \lbr i \hbar\party{}{x^\nu}-\frac{q}{c}A_\nu \rbr \lbr i \hbar\party{}{x^\mu}-\frac{q}{c}A_\mu \rbr\rsbr \Psi + \Psi^* m_0^2 c^2 \Psi \right\} ^*=0 &\Rightarrow
+ \\  &\Psi \lsbr g^{\mu\nu} \lbr -i \hbar\party{}{x^\nu}-\frac{q}{c}A_\nu \rbr \lbr -i \hbar\party{}{x^\mu}-\frac{q}{c}A_\mu \rbr\rsbr \Psi^* + \Psi m_0^2 c^2 \Psi^*=0 
+ \label{eqn2}
+\end{align}
+
+Η (\ref{eqn1}) πολλαπλασιάζεται από αριστερά με $\Psi^*$ και , από αυτό που θα προκύψει, αφαιρείται από την (\ref{eqn2}): 
+
+
+\begin{align*}
+  &\Psi \lsbr g^{\mu\nu} \lbr -i \hbar\party{}{x^\nu}-\frac{q}{c}A_\nu \rbr \lbr -i \hbar\party{}{x^\mu}-\frac{q}{c}A_\mu \rbr\rsbr \Psi^* -
+  \\&- \Psi^* \lsbr g^{\mu\nu} \lbr i \hbar\party{}{x^\nu}+\frac{q}{c}A_\nu \rbr \lbr i \hbar\party{}{x^\mu}+\frac{q}{c}A_\mu \rbr\rsbr \Psi =0 &\Rightarrow 
+  \\& \Psi^* \lsbr -g^{\mu\nu} \lbr i \hbar\party{}{x^\nu}+\frac{q}{c}A_\nu \rbr \lbr i \hbar\party{}{x^\mu}+\frac{q}{c}A_\mu \rbr\rsbr \Psi- 
+  \\&-\Psi \lsbr - g^{\mu\nu} \lbr -i \hbar\party{}{x^\nu}-\frac{q}{c}A_\nu \rbr \lbr -i \hbar\party{}{x^\mu}-\frac{q}{c}A_\mu \rbr\rsbr \Psi^* =0 &\Rightarrow  
+\end{align*}
