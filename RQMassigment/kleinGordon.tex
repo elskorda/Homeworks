@@ -121,21 +121,66 @@
 
 \subsection{Εξίσωση συνέχειας και τετραδιάνυσμα ρεύματος παρουσία διανυσματικου δυναμικού $A^\mu$}  
 
-Για την μελέτη των πυκνοτήτων ρεύματος και φορτίου , ακολουθείται παρόμοια  διαδικασία  με της παραγράφου 3.2. Συγκεκριμένα, η \ref{eqn1} θα πολλαπλασιαστεί από τα αριστερά με $\Psi^*$ και κατόπιν υπολογίζεται το συζυγές της. 
-
+Για να αποδειχτεί το ζητούμενο του πρώτου μέρους της εργασίας, θα χρησιμοποιηθεί η τανυστική μορφή της εξίσωσης \textlatin{Klein-Gordon} παρουσία μαγνητικού πεδίου. H μελέτη των πυκνοτήτων ρεύματος και φορτίου, θα γίνει με  παρόμοια  διαδικασία  με της παραγράφου 3.2. Συγκεκριμένα, η \ref{eqn1} θα πολλαπλασιαστεί από τα αριστερά με $\Psi^*$ (\ref{eqn2}) 
+%-------------------------------------------------
 \begin{align}
- \notag &\Psi^* \lsbr g^{\mu\nu} \lbr i \hbar\party{}{x^\nu}-\frac{q}{c}A_\nu \rbr \lbr i \hbar\party{}{x^\mu}-\frac{q}{c}A_\mu \rbr\rsbr \Psi + \Psi^* m_0^2 c^2 \Psi=0 &\Rightarrow
- \\\notag  &\left\{ \Psi^* \lsbr g^{\mu\nu} \lbr i \hbar\party{}{x^\nu}-\frac{q}{c}A_\nu \rbr \lbr i \hbar\party{}{x^\mu}-\frac{q}{c}A_\mu \rbr\rsbr \Psi + \Psi^* m_0^2 c^2 \Psi \right\} ^*=0 &\Rightarrow
- \\  &\Psi \lsbr g^{\mu\nu} \lbr -i \hbar\party{}{x^\nu}-\frac{q}{c}A_\nu \rbr \lbr -i \hbar\party{}{x^\mu}-\frac{q}{c}A_\mu \rbr\rsbr \Psi^* + \Psi m_0^2 c^2 \Psi^*=0 
- \label{eqn2}
+  \notag &\Psi^* \lsbr g^{\mu\nu} \lbr i \hbar\party{}{x^\nu}-\frac{q}{c}A_\nu \rbr \lbr i \hbar\party{}{x^\mu}-\frac{q}{c}A_\mu \rbr\rsbr \Psi + \Psi^* m_0^2 c^2 \Psi=0 
+  \\&\Psi^* \lsbr -\hbar^2 g^{\mu\nu} \lbr \party{}{x^\nu}+\frac{iq}{\hbar c}A_\nu \rbr \lbr \party{}{x^\mu}+\frac{iq}{\hbar c}A_\mu \rbr\rsbr \Psi + \Psi^* m_0^2 c^2 \Psi=0 
+  \label{eqn2}
 \end{align}
-
-Η (\ref{eqn1}) πολλαπλασιάζεται από αριστερά με $\Psi^*$ και , από αυτό που θα προκύψει, αφαιρείται από την (\ref{eqn2}): 
-
+%-------------------------------------------------
+Κατόπιν υπολογίζεται το συζυγές της προηγούμενης εξίσωσης (\ref{eqn3})
+\begin{align}
+  \notag  &\left\{ \Psi^* \lsbr -\hbar^2 g^{\mu\nu} \lbr \party{}{x^\nu}+\frac{iq}{\hbar c}A_\nu \rbr \lbr \party{}{x^\mu}+\frac{iq}{\hbar c}A_\mu \rbr\rsbr \Psi + \Psi^* m_0^2 c^2 \Psi=0  \right\} ^*=0 &\Rightarrow
+  \\ &\Psi \lsbr -\hbar^2 g^{\mu\nu} \lbr \party{}{x^\nu}-\frac{iq}{\hbar c}A_\nu \rbr \lbr \party{}{x^\mu}-\frac{iq}{\hbar c}A_\mu \rbr\rsbr \Psi^* + \Psi m_0^2 c^2 \Psi^*=0 
+  \label{eqn3}
+\end{align}
+Τέλος λαμβάνεται η διαφορά των εξισώσεων(\ref{eqn2}) και (\ref{eqn3}) που θα οδηγήσει όπως και στην προηγούμενη παράγραφο σε μια εξίσωση, που η σύγκριση της με την εξίσωση συνέχειας, θα δωσει το ζητούμενο του πρώτου μέρους, την μορφή του τετραδιανύσματος του ρεύματος. 
+\begin{align*}
+  &\Psi^* \lsbr -\hbar^2 g^{\mu\nu} \lbr \party{}{x^\nu}+\frac{iq}{\hbar c}A_\nu \rbr \lbr \party{}{x^\mu}+\frac{iq}{\hbar c}A_\mu \rbr\rsbr \Psi- 
+  \\ &-\Psi \lsbr -\hbar^2 g^{\mu\nu} \lbr \party{}{x^\nu}-\frac{iq}{\hbar c}A_\nu \rbr \lbr \party{}{x^\mu}-\frac{iq}{\hbar c}A_\mu \rbr\rsbr \Psi^* &=0 &\Rightarrow
+  \\
+  \\ &\Psi \lsbr g^{\mu\nu} \lbr \party{}{x^\nu}-\frac{iq}{\hbar c}A_\nu \rbr \lbr \party{}{x^\mu}-\frac{iq}{\hbar c}A_\mu \rbr\rsbr \Psi^*- 
+  \\ & -\Psi^* \lsbr g^{\mu\nu} \lbr \party{}{x^\nu}+\frac{iq}{\hbar c}A_\nu \rbr \lbr \party{}{x^\mu}+\frac{iq}{\hbar c}A_\mu \rbr\rsbr \Psi &=0 &\Rightarrow
+\end{align*}
 
 \begin{align*}
-  &\Psi \lsbr g^{\mu\nu} \lbr -i \hbar\party{}{x^\nu}-\frac{q}{c}A_\nu \rbr \lbr -i \hbar\party{}{x^\mu}-\frac{q}{c}A_\mu \rbr\rsbr \Psi^* -
-  \\&- \Psi^* \lsbr g^{\mu\nu} \lbr i \hbar\party{}{x^\nu}+\frac{q}{c}A_\nu \rbr \lbr i \hbar\party{}{x^\mu}+\frac{q}{c}A_\mu \rbr\rsbr \Psi =0 &\Rightarrow 
-  \\& \Psi^* \lsbr -g^{\mu\nu} \lbr i \hbar\party{}{x^\nu}+\frac{q}{c}A_\nu \rbr \lbr i \hbar\party{}{x^\mu}+\frac{q}{c}A_\mu \rbr\rsbr \Psi- 
-  \\&-\Psi \lsbr - g^{\mu\nu} \lbr -i \hbar\party{}{x^\nu}-\frac{q}{c}A_\nu \rbr \lbr -i \hbar\party{}{x^\mu}-\frac{q}{c}A_\mu \rbr\rsbr \Psi^* =0 &\Rightarrow  
+  &g^{\mu\nu} \Psi \party{}{x^\nu} \party{}{x^\mu} \Psi^*-   g^{\mu\nu} \Psi \frac{iq}{\hbar c}\party{}{x^\nu}(A_\mu\Psi^*)-g^{\mu\nu}  \Psi \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi^*  -g^{\mu\nu} \Psi \frac{q^2}{c^2}A_\nu A_\mu \Psi^* -
+  \\& -g^{\mu\nu} \Psi^* \party{}{x^\nu} \party{}{x^\mu} \Psi - g^{\mu\nu} \Psi^* \frac{iq}{\hbar c}\party{}{x^\nu}(A_\mu \Psi) - g^{\mu\nu}  \Psi^*  \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi  +g^{\mu\nu} \Psi \frac{q^2}{c^2}A_\nu A_\mu \Psi^* =0  &\Rightarrow
+  %-----------------------
+  \\ &g^{\mu\nu} \Psi \party{}{x^\nu} \party{}{x^\mu} \Psi^*-   g^{\mu\nu} \Psi \frac{iq}{\hbar c}\party{}{x^\nu}(A_\mu\Psi^*)-g^{\mu\nu}  \Psi \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi^*-g^{\mu\nu} \Psi^* \party{}{x^\nu} \party{}{x^\mu} \Psi -
+  \\&-g^{\mu\nu} \Psi^* \frac{iq}{\hbar c}\party{}{x^\nu}(A_\mu \Psi) - g^{\mu\nu}  \Psi^*  \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi =0  &\Rightarrow 
+  %------------------------  
+  \\ &\lbr g^{\mu\nu} \Psi \party{}{x^\nu} \party{}{x^\mu} \Psi^*-g^{\mu\nu} \Psi^* \party{}{x^\nu} \party{}{x^\mu} \Psi+ \party{\Psi^*}{x^\nu} \party{\Psi}{x^\mu}-\party{\Psi}{x^\nu} \party{\Psi^*}{x^\mu} \rbr -   g^{\mu\nu} \Psi \frac{iq}{\hbar c}\party{}{x^\nu}(A_\mu\Psi^*)-
+  \\&-g^{\mu\nu}  \Psi \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi^* -g^{\mu\nu} \Psi^* \frac{iq}{\hbar c}\party{}{x^\nu}(A_\mu \Psi) - g^{\mu\nu}  \Psi^*  \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi =0  &\Rightarrow 
+  %------------------------  
+  \\ &g^{\mu\nu} \party{}{x^\mu} \lbr   \Psi\party{}{x^\nu}\Psi^*  - \Psi^* \party{}{x^\nu} \Psi \rbr - g^{\mu\nu} \Psi \frac{iq}{\hbar c}\party{}{x^\nu}(A_\mu\Psi^*)-g^{\mu\nu}  \Psi \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi^*-
+  \\& -g^{\mu\nu} \Psi^* \frac{iq}{\hbar c}\party{}{x^\nu}(A_\mu \Psi) - g^{\mu\nu}  \Psi^*  \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi =0  &\Rightarrow 
+  %------------------------  
+  \\ &g^{\mu\nu} \party{}{x^\mu} \lbr   \Psi\party{}{x^\nu}\Psi^*  - \Psi^* \party{}{x^\nu} \Psi \rbr - g^{\mu\nu} \Psi \frac{iq}{\hbar c} A_\mu\party{\Psi^*}{x^\nu}- g^{\mu\nu} \Psi \Psi^* \frac{iq}{\hbar c}\party{A_\mu}{x^\nu}-
+ \\&-g^{\mu\nu}\Psi \frac{iq}{\hbar c} A_\nu \party{\Psi^*}{x^\mu} -g^{\mu\nu} \Psi^*  \Psi\frac{iq}{\hbar c}\party{A_\mu}{x^\nu}-g^{\mu\nu} \Psi^* \frac{iq}{\hbar c}A_\mu\party{\Psi}{x^\nu}- 
+  \\&-g^{\mu\nu}  \Psi^*  \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi =0  &\Rightarrow
+  %------------------------  
+  \\ &g^{\mu\nu} \party{}{x^\mu} \lbr   \Psi\party{}{x^\nu}\Psi^*  - \Psi^* \party{}{x^\nu} \Psi \rbr - g^{\mu\nu} \frac{iq}{\hbar c} \lbr 2\Psi A_\mu\party{\Psi^*}{x^\mu} +2\Psi \Psi^* \party{A_\mu}{x^\mu}+ 2 A_\mu \Psi^* \party{\Psi}{x^\mu} \rbr=0 &\Rightarrow
 \end{align*}
+
+\begin{align}
+  \notag &g^{\mu\nu} \party{}{x^\mu} \lbr   \Psi\party{}{x^\nu}\Psi^*  - \Psi^* \party{}{x^\nu} \Psi \rbr - g^{\mu\nu} \frac{iq}{\hbar c} \party{}{x^\mu}\lbr 2\Psi A_\mu \Psi^* \rbr=0 &\Rightarrow
+  \notag\\
+  \\& g^{\mu\nu} \party{}{x^\mu} \lsbr  \lbr \Psi\party{}{x^\nu}\Psi^*  - \Psi^* \party{}{x^\nu} \Psi \rbr - \frac{2iq}{\hbar c} \lbr \Psi A_\mu \Psi^* \rbr \rsbr = 0
+  \label{befin}
+\end{align}
+\vspace{0.5cm}
+
+Λόγω των εξισώσεων (\ref{dianisma}) και της (\ref{contineq2}) η (\ref{befin}) γίνεται : 
+\vspace{0.5cm}
+\begin{mdframed}
+  \begin{equation}
+    J^\mu =\frac{i \hbar}{2m} \lbr \Psi^* (\partial ^\mu \Psi)-\Psi(\partial ^\mu \Psi^*) \rbr - \frac{iq}{mc} A_\mu \Psi^* \Psi 
+    \label{finqchar}
+  \end{equation}
+\end{mdframed}
+\vspace{0.5cm}
+Kαι τα τα δύο μέλη της (\ref{finqchar}) πολλαπλασιάστηκαν με $\frac{i \hbar}{2m}$. Δείχτηκε επομένως ότι για μια συνάρτηση που ικανοποιεί την εξίσωση \textlatin{Klein-Gordon} παρουσία διανυσματικού δυναμικού $A_\mu$, μ = 0,1,2,3, η εξίσωση συνέχειας ικανοποιείται από το τετραδιάνυσμα της σχέσης (\ref{finqchar}). 
+
+
