@@ -1,0 +1,104 @@
+\section{Μη σχετικιστικό όριο εξίσωσης \textlatin{Klein-Gordon}}
+
+Στο μη σχετικιστικό όριο η ταχύτητα του σωματιδίου είναι πολύ μικρή σε σχέση με την ταχύτητα του φωτός στο κενό $(\upsilon<<C)$ οπότε θα ισχύει και $p<<mc$.Η σχέση (\ref{genrel}) γίνεται: 
+
+\[
+  E=\lbr c^2p^2+m_0^2c^4 \rbr^{1/2} =mc^2 \lbr 1+ \frac{p^2}{m_0^2c^2} \rbr^{1/2} \approx mc^2 \lbr 1+ \frac{1}{2} \frac{p^2}{m_0^2c^2} \rbr \Rightarrow
+\]
+
+\begin{equation}
+  E \approx  m_0 c^2 + \frac{p^2}{2m} \Rightarrow E'=E - m_0 c^2
+  \label{nrlim}
+\end{equation}
+
+Από την σχέση (\ref{nrlim}) παρατηρείται ότι στην οριακή περίπτωση η συνολική ενέργεια του σωματιδίου διαφέρει ελάχιστα από την ενέργεια ηρεμίας. Στις επόμενες παραγράφους θα μελετηθεί το μη σχετικιστικό όριο για την περίπτωση ελεύθερου σωματιδίου όσο και για την περίπτωση που υπάρχει παρουσία ηλεκτρομαγνητικού πεδίου.
+
+%============================================================================
+%                             new subsection
+%============================================================================
+\subsection{Μη σχετικιστικό όριο ελεύθερης εξίσωσης \textlatin{Klein-Gordon}}
+
+Για να μελετηθεί το μη σχετικιστικό όριο, η λύση της εξίσωσης γράφεται με την παρακάτω χωριζόμενη μορφή,με αντικατάσταση της(\ref{nrlim}) στην(\ref{sol1})
+
+
+\begin{equation}
+  \Psi(\vec{r},t) =e^{ \frac{i}{\hbar}\lbr \vec{p}\vec{x} -\lbr m_0 c^2 + \frac{p^2}{2m} \rbr t/\hbar \rbr }=e^{ \frac{i}{\hbar}\lbr \vec{p}\vec{x} -E't \rbr} e^{-im_0c^2t/\hbar }= \phi(\vec{r},t)e^{-im_0c^2t/\hbar } 
+  \label{soludist}
+\end{equation}
+
+Στην ουσία η εξάρτηση από τον χρόνο χωρίστηκε σε δύο όρους: ο ένας από τους οποίους περιέχει την μάζα ηρεμίας του σωματιδίου και ο άλλος είναι ακριβώς η λύση της ελεύθερης εξίσωσης \textlatin{Schr\"ondiger} με χαμιλτονιανή την $H=p^2/2m_0$.Επομένως θα ισχύει: 
+
+\begin{equation} 
+  \left| i\hbar\party{\phi}{t} \right| \approx E' \phi << m_0 c^2\phi
+  \label{eqnsometh1}
+\end{equation}
+
+Αρχικά θα υπολογιστουν η πρώτη και δεύτερη παράγωγος ως προς το χρόνο της Ψ και θα γινει αντικατάσταση στη (\ref{kg2}).
+
+\begin{equation}
+  \begin{split}
+  \party{\Psi}{t} &= \party{}{t} \lbr \phi e^{-im_0c^2t/\hbar } \rbr = \party{\phi}{t} e^{-im_0c^2t/\hbar }  -im_oc^2/\hbar \phi e^{-im_0c^2t/\hbar }=
+  \\&=\lbr \party{\phi}{t}   -im_oc^2/\hbar \phi\rbr e^{-im_0c^2t/\hbar }   \stackrel{(\ref{eqnsometh1})}{\approx}  -im_oc^2/\hbar \phi e^{-im_0c^2t/\hbar }
+  \end{split}
+  \label{somet1}
+\end{equation}
+
+\begin{equation}
+  \begin{split}
+  \party{^2 \Psi}{t^2} &= \party{}{t} \lsbr \lbr \party{\phi}{t}-im_oc^2/\hbar \phi \rbr e^{-im_0c^2t/\hbar }  \rsbr=
+  \\&=\lbr \party{^2\phi}{t^2}-im_0c^2\party{\phi}{t}/\hbar -im_0c^2\party{\phi}{t}/\hbar- m_0^2c^4\phi/\hbar \rbr e^{-im_0c^2t/\hbar } =
+  \\& \approx -\lbr 2im_0c^2\party{\phi}{t}/\hbar+ m_0^2c^4\phi/\hbar \rbr e^{-im_0c^2t/\hbar } 
+  \end{split}
+  \label{somet2}
+\end{equation}
+
+Στην εξίσωση (\ref{somet2}), η δευτερη παράγωγος της φ ως προς το χρονο θεωρείται αμελητέα. Τέλος η (\ref{somet2}) εισάγεται στην εξίσωση \textlatin{Klein-Gordon} οπότε : 
+
+\[
+-\frac{1}{c^2}\lbr 2im_0c^2\party{\phi}{t}/\hbar+ m_0^2c^4\phi/\hbar \rbr e^{-im_0c^2t/\hbar }  = \lbr \party{^2}{x^2}+\party{^2}{y^2}+\party{^2}{z^2}- \frac{m_0^2c^2 }{\hbar}\rbr \phi e^{-im_0c^2t/\hbar }
+\]
+\vspace{0.5cm}
+\begin{mdframed}
+  \[   
+  i\hbar\party{\phi}{t}  = -\frac{\hbar^2}{2m_0}\nabla^2 \phi
+  \]
+\end{mdframed}
+\vspace{0.5cm}
+Η τελευταία εξίσωση δεν είναι άλλη απο την ελεύθερη εξίσωση του \textlatin{Schr\"ondiger} για σωματίδια χωρίς σπιν.
+%============================================================================
+%                             new subsection
+%============================================================================
+\subsection{Μη σχετικιστικό όριο εξίσωσης \textlatin{Klein-Gordon} παρουσία μαγνητικού πεδίου}
+ 
+Και σε αυτή τη  περίπτωση ακολουθείται η ίδια διαδικασία με της προηγούμενης παραγράφου.Η λύση γράφεται με την μορφή της εξίσωσης (\ref{soludist}). Η φ και σε αυτή την περίπτωση αποτελεί το μη σχετικιστικό κομμάτι της λύσης για το οποίο θα πρέπει να ισχύουν οι παρακάτω σχέσεις : 
+
+\begin{align}
+ & \left| i\hbar\party{\phi}{t} \right|  << m_0 c^2\phi , & \left| eA_0 \phi \right| << m_0 c^2|\phi|
+  \label{somet3}
+\end{align}
+
+Στην (\ref{somet3}) $A_0$ είναι το βαθμωτο δυναμικο φ. Χρησιμοποιείται ο συμβολισμός αυτος για να μην υπάρχει σύγχυση με την κυματοσυνάρτηση. Η πρώτη σχέση εκφράζει το πόσο μικρή είναι η μη σχετικιστική ενέργεια σε σχέση με την ενέργεια ηρεμίας (όπως και στη προηγούμενη παράγραφο), ενώ η δευτερη ότι το δυναμικό πρεπει να είναι επίπεδο σε σύγκριση με την ενέργεια ηρεμίας, αλλιώς είναι αδύνατη η μελέτη του μη σχετικιστικού ορίου.  
+
+\begin{align*}
+  &\lbr i \hbar \party{}{t}-q A_0 \rbr \Psi = \lbr i \hbar \party{}{t}-q A_0 \rbr \phi e^{-im_0c^2t/\hbar }=\lbr i \hbar \party{\phi}{t} + m_0c^2 \phi -q A_0  \phi\rbr e^{-im_0c^2t/\hbar }
+  \\
+  \\& \lbr i \hbar \party{}{t}-q A_0 \rbr^2 \Psi = \lbr i \hbar \party{}{t}-q A_0 \rbr \lbr i \hbar \party{\phi}{t} + m_0c^2 \phi -q A_0  \phi\rbr e^{-im_0c^2t/\hbar }=
+  \\&= i \hbar \party{}{t} \lbr i \hbar \party{\phi}{t} + m_0c^2t /phi -q A_0  \phi\rbr e^{-im_0c^2t/\hbar }-q A_0\lbr i \hbar \party{\phi}{t} + m_0c^2 \phi -q A_0  \phi\rbr e^{-im_0c^2t/\hbar } =
+  \\&=\lbr -\hbar^2 \party{^2\phi}{t^2}- i \hbar \party{ A_0 }{t}\phi -i\hbar q A_0 \party{\phi}{t}+i\hbar m_0c^2\party{\phi}{t}\rbr e^{-im_0c^2t/\hbar }+
+  \\&+ \lbr-i\hbar q \party{\phi}{t}A_0+qA_0^2\phi-q A_0\phi m_0 c^2 \phi+i\hbar m_0 c^2 \party{\phi}{t}-q A_0 \phi m_0 c^2 m_0^2 c^4\rbr  e^{-im_0c^2t/\hbar }
+  \\& \approx e^{-im_0c^2 t/\hbar } \lbr m_0^2c^2-2m_0 q A_0 +2 m_0 c^2 i \hbar \party{}{t} -i\hbar q \party{A_0}{t} \rbr \phi
+\end{align*}
+
+Το αποτέλεσμα αυτό αντικαθιστάται στην εξίσωση (\ref{kgfield}) οπότε: 
+
+\[
+  \lbr m_0^2c^2-2m_0 q A_0 +2 m_0 c^2 i \hbar \party{}{t} -i\hbar q \party{A_0}{t} \rbr e^{-im_0c^2 t/\hbar } \phi =e^{-im_0c^2 t/\hbar } \lsbr \lbr +i\hbar \nabla +\frac{q}{c} A\rbr ^2 +m_0^2 c^2 \rsbr \phi
+\]
+\vspace{0.5cm}
+\begin{mdframed}
+  \[
+   i\hbar \party{\phi}{t} =\frac{1}{2 m_0}\lbr +i\hbar \nabla +\frac{q}{c} A\rbr ^2 +q A_0+\frac{i\hbar q}{2m_0 c^2} \party{A_0}{t} 
+   \]
+\end{mdframed}
+\vspace{0.5cm}
+Η παραπάνω εξίσωση ειναι η εξίσωση του \textlatin{Schr\"ondiger} για ηλεκτρομαγνητικό δυναμικό. Παρατηρείται,επομένως ότι στο μη σχετικιστικό όριο η εξίσωση \textlatin{Klein-Gordon} ταυτίζεται με την εξίσωση του \textlatin{Schr\"ondiger} και στις δύο περιπτώσεις που μελετήθηκαν, για σωματίδια χωρίς σπίν.

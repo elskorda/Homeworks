@@ -1,5 +1,7 @@
 \section{Εξίσωση \textlatin{Klein-Gordon}}
-
+%============================================================================
+%                             new subsection
+%============================================================================
 \subsection{Εξίσωση \textlatin{Klein-Gordon} για ελεύθερο σωματίδιο}
 Για τον υπολογισμό της εξίσωσης \textlatin{Klein-Gordon} αρκεί να αντικατασταθούν οι τελεστές ενέργειας και ορμής (\ref{energeiaormi}) στην (\ref{genrel}): 
 
@@ -30,12 +32,32 @@
 Επομένως η εξίσωση \textlatin{Klein-Gordon} για ελεύθερο σωματίδιο και για $\hbar = c = 1 $ γράφεται: 
 
 \begin{equation}
-  {p}^\mu {p}_\mu \Psi +m_0^2 \Psi = 0
+  {p}^\mu {p}_\mu \Psi + m_0^2 \Psi=0 
   \label{kg2}
 \end{equation}
-%----------------------------------------
-%    new subsection
-%----------------------------------------
+
+\subsubsection{Λύσεις εξίσωσης \textlatin{Klein Gordon}}
+Οι λύσεις της εξίσωσης (\ref{kg2}), είναι επίπεδα κύματα που περιγράφονται από τη μορφή:
+
+\begin{equation}
+  \Psi = e^{\lbr -\frac{ip_{\mu}x^{\mu}}{\hbar} \rbr } =e^{ \frac{i}{\hbar}\lbr \vec{p}\vec{x} -Et \rbr }
+  \label{sol1}
+\end{equation}
+
+Με αντικατάσταση στην εξίσωση (\ref{kg2}), προκύπτει το φάσμα ενεργειών για την ελεύθερη εξίσωση:
+
+\[
+  {p}^\mu {p}_\mu e^{\lbr -\frac{ip_{\mu}x^{\mu}}{\hbar} \rbr } +m_0^2 e^{\lbr -\frac{ip_{\mu}x^{\mu}}{\hbar} \rbr } = 0 \Rightarrow {p}^\mu {p}_\mu = m_0^2 c^2 \Rightarrow
+\]
+
+\[
+\frac{E^2}{c^2}- \vec{p}\vec{p}=m_0^2c^2 \Rightarrow E=\pm \sqrt{\vec{p}^2 + m_0^2c^2} 
+\]
+
+Παρατηρείται ότι το φάσμα των επιτρεπτών ενεργειών περιλαμβάνει τόσο θετικές όσο και αρνητικές ενέργειες. Οι αρνητικές ενέργειες συνδέονται με την ύπαρξη αντισωματιδίων. Ένα ακόμα πρόβλημα της εξίσωσης, είναι ότι για τον ακριβή προσδιορισμό της λύσης,είναι απαραίτητο να δινεται και η πρώτη παράγωγος της κυματοσυνάτησης ως αρχική συνθήκη.Ένα ακόμη πρόβλημα προκύπτει με την έκφραση της πυκνότητας πιθανότητας, στην επόμενη παράγραφο.
+%============================================================================
+%                             new subsection
+%============================================================================
 \subsection{Εξίσωση συνέχειας και τετραδιάνυσμα ρεύματος για ελεύθερο σωματίδιο}  
 
 Για να υπολογιστεί η μορφή του τετραδιάνυσμα του ρεύματος, υπολογίζεται αρχικά το συζυγές της (\ref{kg1}) :
@@ -84,10 +106,13 @@
   \label{currentfree}
 \end{align}
 
+\vspace{0.5cm}
+
  Kαι τα τα δύο μέλη της (\ref{fineqfree}) πολλαπλασιάστηκαν με $\frac{i \hbar}{2m}$ ώστε το $\rho$ της (\ref{currentfree}) να έχει διαστάσεις πυκνότητας πιθανότητας.
-%----------------------------------------
-%    new subsection
-%----------------------------------------
+Παρατηρείται ότι η ερμηνεία του $\rho$ της (\ref{currentfree}) ως πυκνότητας πιθανότητας, δημιουργεί προβήματα,καθως μπορεί να είναι είτε θετικό είτε αρνητικό, κατι που θα σήμαινε ότι το σωματίδιο κάποιες στιγμές θα έπαυε να υπάρχει. Ο λόγος γι'αυτο είναι όπως αναφέρθηκε προηγουμένος ο δευτεροτάξιος χαρακτήρας της εξίσωσης ως προς το χρόνο. 
+%============================================================================
+%                             new subsection
+%============================================================================
 \subsection{Εξίσωση \textlatin{Klein-Gordon} παρουσία ηλεκτρομαγνητικού πεδίου}
 
 Στην περίπτωση που υπάρχει παρουσία διανυσματικού πεδίου, στους τελεστές ενέργειας και ορμής (\ref{energeiaormi}) εισάγονται τα δυναμικά $\vec{A}$ και $\phi$ έτσι ώστε ο τρόπος εκλογής τους να μην έχει φυσική σημασία. Η διαδικασία αυτή γνωστή και ως ελάσσονα αντικατάσταση: 
@@ -136,6 +161,8 @@
   \label{eqn3}
 \end{align}
 Τέλος λαμβάνεται η διαφορά των εξισώσεων(\ref{eqn2}) και (\ref{eqn3}) που θα οδηγήσει όπως και στην προηγούμενη παράγραφο σε μια εξίσωση, που η σύγκριση της με την εξίσωση συνέχειας, θα δωσει το ζητούμενο του πρώτου μέρους, την μορφή του τετραδιανύσματος του ρεύματος. 
+
+
 \begin{align*}
   &\Psi^* \lsbr -\hbar^2 g^{\mu\nu} \lbr \party{}{x^\nu}+\frac{iq}{\hbar c}A_\nu \rbr \lbr \party{}{x^\mu}+\frac{iq}{\hbar c}A_\mu \rbr\rsbr \Psi- 
   \\ &-\Psi \lsbr -\hbar^2 g^{\mu\nu} \lbr \party{}{x^\nu}-\frac{iq}{\hbar c}A_\nu \rbr \lbr \party{}{x^\mu}-\frac{iq}{\hbar c}A_\mu \rbr\rsbr \Psi^* &=0 &\Rightarrow
@@ -148,19 +175,24 @@
   &g^{\mu\nu} \Psi \party{}{x^\nu} \party{}{x^\mu} \Psi^*-   g^{\mu\nu} \Psi \frac{iq}{\hbar c}\party{}{x^\nu}(A_\mu\Psi^*)-g^{\mu\nu}  \Psi \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi^*  -g^{\mu\nu} \Psi \frac{q^2}{c^2}A_\nu A_\mu \Psi^* -
   \\& -g^{\mu\nu} \Psi^* \party{}{x^\nu} \party{}{x^\mu} \Psi - g^{\mu\nu} \Psi^* \frac{iq}{\hbar c}\party{}{x^\nu}(A_\mu \Psi) - g^{\mu\nu}  \Psi^*  \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi  +g^{\mu\nu} \Psi \frac{q^2}{c^2}A_\nu A_\mu \Psi^* =0  &\Rightarrow
   %-----------------------
+  \\
   \\ &g^{\mu\nu} \Psi \party{}{x^\nu} \party{}{x^\mu} \Psi^*-   g^{\mu\nu} \Psi \frac{iq}{\hbar c}\party{}{x^\nu}(A_\mu\Psi^*)-g^{\mu\nu}  \Psi \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi^*-g^{\mu\nu} \Psi^* \party{}{x^\nu} \party{}{x^\mu} \Psi -
   \\&-g^{\mu\nu} \Psi^* \frac{iq}{\hbar c}\party{}{x^\nu}(A_\mu \Psi) - g^{\mu\nu}  \Psi^*  \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi =0  &\Rightarrow 
   %------------------------  
+  \\
   \\ &\lbr g^{\mu\nu} \Psi \party{}{x^\nu} \party{}{x^\mu} \Psi^*-g^{\mu\nu} \Psi^* \party{}{x^\nu} \party{}{x^\mu} \Psi+ \party{\Psi^*}{x^\nu} \party{\Psi}{x^\mu}-\party{\Psi}{x^\nu} \party{\Psi^*}{x^\mu} \rbr -   g^{\mu\nu} \Psi \frac{iq}{\hbar c}\party{}{x^\nu}(A_\mu\Psi^*)-
   \\&-g^{\mu\nu}  \Psi \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi^* -g^{\mu\nu} \Psi^* \frac{iq}{\hbar c}\party{}{x^\nu}(A_\mu \Psi) - g^{\mu\nu}  \Psi^*  \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi =0  &\Rightarrow 
   %------------------------  
+  \\
   \\ &g^{\mu\nu} \party{}{x^\mu} \lbr   \Psi\party{}{x^\nu}\Psi^*  - \Psi^* \party{}{x^\nu} \Psi \rbr - g^{\mu\nu} \Psi \frac{iq}{\hbar c}\party{}{x^\nu}(A_\mu\Psi^*)-g^{\mu\nu}  \Psi \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi^*-
   \\& -g^{\mu\nu} \Psi^* \frac{iq}{\hbar c}\party{}{x^\nu}(A_\mu \Psi) - g^{\mu\nu}  \Psi^*  \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi =0  &\Rightarrow 
   %------------------------  
+  \\
   \\ &g^{\mu\nu} \party{}{x^\mu} \lbr   \Psi\party{}{x^\nu}\Psi^*  - \Psi^* \party{}{x^\nu} \Psi \rbr - g^{\mu\nu} \Psi \frac{iq}{\hbar c} A_\mu\party{\Psi^*}{x^\nu}- g^{\mu\nu} \Psi \Psi^* \frac{iq}{\hbar c}\party{A_\mu}{x^\nu}-
  \\&-g^{\mu\nu}\Psi \frac{iq}{\hbar c} A_\nu \party{\Psi^*}{x^\mu} -g^{\mu\nu} \Psi^*  \Psi\frac{iq}{\hbar c}\party{A_\mu}{x^\nu}-g^{\mu\nu} \Psi^* \frac{iq}{\hbar c}A_\mu\party{\Psi}{x^\nu}- 
   \\&-g^{\mu\nu}  \Psi^*  \frac{iq}{\hbar c} A_\nu \party{}{x^\mu} \Psi =0  &\Rightarrow
   %------------------------  
+  \\
   \\ &g^{\mu\nu} \party{}{x^\mu} \lbr   \Psi\party{}{x^\nu}\Psi^*  - \Psi^* \party{}{x^\nu} \Psi \rbr - g^{\mu\nu} \frac{iq}{\hbar c} \lbr 2\Psi A_\mu\party{\Psi^*}{x^\mu} +2\Psi \Psi^* \party{A_\mu}{x^\mu}+ 2 A_\mu \Psi^* \party{\Psi}{x^\mu} \rbr=0 &\Rightarrow
 \end{align*}
 
