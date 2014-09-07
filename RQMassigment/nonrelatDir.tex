@@ -1,1 +1,102 @@
-\section{Εξίσωση \textlatin{Dirac}- Μη σχετικιστικό όριο}
+%====================================================
+%               N E W   S E C T I O N  
+%====================================================
+\section{Μη σχετικιστικό όριο εξίσωσης \textlatin{Dirac}}
+Είναι σημαντικό να εξεταστεί όπως έγινε στην περίπτωση της εξίσωσης \textlatin{Klein-Gordon}, η συμπεριφορά της εξίσωσης, στο όριο των χαμηλών ταχυτήτων. Θα εξετασθούν οι περιπτώσεις της μονοδιάστατης εξίσωσης και της εξίσωσης παρουσίας ηλεκτρομαγνητικού πεδίου. Στην πρώτη περίπτωση αναμένεται η εξίσωση να προσεγγίζει την εξίσωση \textlatin{Schr\"ondiger} ενώ στη δεύτερη την εξίσωση του \textlatin{Pauli}. 
+%==============  new subsection   ============================= 
+\subsection{Ελεύθερη κίνηση - περίπτωση μονοδιάστατης εξίσωσης \textlatin{Dirac}-μη σχετικιστικό όριο}
+\subsubsection{Ελεύθερη κίνηση}
+Η μελέτη θα ξεκινησει από την εξίσωση(\ref{somesoldir}). Στο μη σχετικιστικό όριο και για την περίπτωση των θετικών ενεργειών θα ισχύει:\\
+\[ E_p \approx m_0c^2 + \frac{p^2}{2m_0} \]\\
+Από την (\ref{somesoldir}) θα ισχύει ότι: \\
+\begin{equation}
+  \chi_0 =\frac{c \sigma \cdot p }{2m_0 c^2 + \frac{p^2}{2m_0}}\phi_0
+\end{equation} \\
+Επειδή $2m_0 c^2 >> \frac{p^2}{2m_0}$ θα ισχύει ότι $\phi_0 >> \chi_0 $. Επομένως η συνιστώσα $chi_0 $ μπορεί να θεωρηθεί αμελητέα. Οι λύσεις στο όριο αυτό θα έχουν τη μορφή: 
+
+\begin{align*} 
+  \Psi = 
+  \begin{pmatrix}
+    &1\\ &0\\ &0\\ &0  
+  \end{pmatrix}
+  e^{ipr/ \hbar},
+  &\Psi = 
+  \begin{pmatrix}
+    &0\\ &1\\ &0\\ &0  
+  \end{pmatrix}
+  e^{ipr/ \hbar}
+\end{align*}\\
+Οι ιδιοσυναρτήσεις σ'αυτη τη περίπτωση, που η χ συνιστώστα δεν λαμβάνεται υπόψη, αντιστοιχούν στο σπίν του σωματιδίου και έχουν ιδιοτιμές $+1/2, -1/2$ αντίστοιχα
+\subsubsection{Μονοδιάστατη κίνηση}
+Στην παράγραφο αυτή θα παρουσιαστεί η περίπτωση της μονοδιάστατης εξίσωσης \textlatin{Dirac}, που αποτελεί ειδικότερη περίπτωση της τρισδιάστατης εξίσωσης που παρουσιάστηκε στην προηγούμενη παράγραφο.\\ 
+Η μονοδιάστατη εξίσωση είναι : 
+\[
+\begin{pmatrix}
+  &m &p\\
+  &p &-m
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+  &\phi\\
+  &\chi
+\end{pmatrix}
+= E \cdot
+\begin{pmatrix}
+  &\phi\\
+  &\chi
+\end{pmatrix}
+\]
+\\
+Από την οποία προκύπτουν οι εξισώσεις : \\
+\begin{align*}
+  &m\phi+p\chi=E\phi
+  \\&p\phi-m\chi=E\chi
+\end{align*}\\
+Από αυτές λύνοντας ως προς χ ισχύει $ \chi =\frac{p\phi}{E+m}$. Στο μη σχετικιστικό όριο η κινητική ενέργεια του σωματιδίου είναι πολύ μικρή σε σχέση με την ενέργεια ηρεμίας, οπότε ισχύει  $E \approx m$ άρα $ \chi =\frac{p\phi}{2m}$. Η αντικατάσταση του αποτελέσματος αυτού στην πρώτη από τις προηγούμενες εξισώσεις δίνει :\\
+\[ m\phi +\frac{p^2}{2m}\phi=E\phi \]\\
+Η παραπάνω σχέση δεν είναι άλλη από την εξίσωση του \textlatin{Schr\"ondiger} για ελεύθερο σωματίδιο.\\
+%==============  new subsection   =============================  
+\subsection{Mη σχετικιστικό όριο παρουσία ηλεκτρομαγνητικού πεδίου}
+Η μελέτη του ορίου θα ξεκινήσει, απο την εξίσωση (\ref{diremfinal}). Αρχικά θα μελετηθεί η :\\ 
+\begin{equation}
+  i\hbar \party{\chi}{t} = c \sigma \cdot \hat{\Pi} \phi+ e A_0\chi -2m_0 c^2 \chi
+  \label{nonreldir1}
+\end{equation}\\
+Στο συγκεκριμένο όριο η κινητική ενέργεια του σωματιδίου, όπως και η δυναμική ενεργεια, είναι μικρές σε σύγκριση με την ενέργεια ηρεμίας.Αυτό επιτρέπει να γίνουν οι προσσεγγισεις\\ 
+\begin{align*}
+  &\left| i \hbar \party{}{t}\right| << \left| m_0 c^2 \chi \right|, &\left| e A_0 \chi \right| << \left| m_0 c^2 \chi \right|
+\end{align*}\\
+Από την (\ref{nonreldir1}) προκύπτει: \\
+\[
+  i\hbar \party{\chi}{t}+2m_0 c^2 \chi- e A_0\chi = c \sigma \cdot \hat{\Pi} \phi \Rightarrow
+\]\\
+\begin{equation}
+  \chi = \frac{\sigma \cdot\hat{\Pi} }{2m_0 c} \phi
+  \label{nonreldir2}
+\end{equation}\\
+Η εισαγωγή της (\ref{nonreldir2}) στην (\ref{nonreldir1}) θα οδηγήσει στην μη σχετικιστικη έκφραση της κυματοσυνάρτησης $\phi$ : \\
+\[
+ i\hbar \party{\phi}{t} = c \sigma \cdot \hat{\Pi} \chi+ e A_0\phi -2m_0 c^2 \phi
+\]\\
+\begin{equation}
+  i\hbar \party{\phi}{t} = \frac{\lbr \sigma \cdot\hat{\Pi} \rbr \lbr
+    \sigma \cdot\hat{\Pi} \rbr }{2m_0 c} \phi+ eA_0\phi
+  \label{nonreldir3}
+\end{equation}\\
+Ο υπολογισμός του πρώτου όρου του δεύτερου μέλους θα γίνει με τη βοήθεια της σχέσης (\ref{equationforcalc}).  \\
+\begin{equation*}
+  \begin{split}
+    \lbr \sigma \cdot\hat{\Pi} \rbr  \lbr \sigma \cdot\hat{\Pi} \rbr &= \hat{\Pi}^2+i\sigma \cdot \lbr \hat{\Pi} \times \hat{\Pi} \rbr\\
+    &=\lbr p-\frac{e}{c}A \rbr^2+i\sigma \cdot \lsbr \lbr p-\frac{e}{c}A \rbr \times \lbr p-\frac{e}{c}A \rbr \rsbr\\
+    &=\lbr p-\frac{e}{c}A \rbr^2+i\sigma \cdot \lsbr \lbr i \hbar \nabla-\frac{e}{c}A \rbr \times \lbr i \hbar \nabla-\frac{e}{c}A \rbr \rsbr\\
+    &=\lbr p-\frac{e}{c}A \rbr^2+i\sigma \cdot \lsbr \lbr - \hbar^2 \nabla \times \nabla+ \frac{e^2}{c^2}A \times A -i\hbar\frac{e}{c}\nabla \times A -i\hbar \frac{e}{c} A\times \nabla  \rbr \rsbr\\
+    &=\lbr p-\frac{e}{c}A \rbr^2-\frac{e}{c}\hbar \sigma \cdot (\nabla \times A)\\
+    &=\lbr p-\frac{e}{c}A \rbr^2-\frac{e}{c}\hbar \sigma \cdot B
+  \end{split}
+\end{equation*}\\
+Με βάση τα παραπάνω, η εξίσωση (\ref{nonreldir3}) γίνεται: 
+\begin{equation}
+  i\hbar \party{\phi}{t} = \lbr \lbr p-\frac{e}{c}A \rbr^2 /2m_0 c - \frac{e}{2 m_0 c}\hbar \sigma \cdot B+ eA_0 \rbr \phi
+  \label{nonreldirfinem}
+\end{equation}\\
+Η (\ref{nonreldirfinem}) δεν είναι άλλη από την εξίσωση \textlatin{Pauli}. Ο χ σπίνορας όπως φάνηκε από την (\ref{nonreldir2}) είναι πολύ μικρός σε σύγκριση με την συνιστώσα φ και γι'αυτο στην προσέγγιση εξετάστηκε το φ. Από το παραπάνω αποτέλεσμα γινεται φανερό ότι η φ  θα περιγράφει τις καταστάσεις σπίν, οπως αναφέρθηκε και σε προηγούμενη παράγραφο. 

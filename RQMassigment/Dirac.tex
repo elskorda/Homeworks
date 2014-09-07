@@ -1,0 +1,423 @@
+%====================================================
+%               N E W   S E C T I O N  
+%====================================================
+\section{Εξίσωση \textlatin{Dirac}}
+
+Σε προηγούμενο κεφάλαιο αναφέρθηκαν τα προβλήματα που δημιουργεί ο δευτεροτάξιος χαρακτήρας της εξίσωσης \textlatin{Klein-Gordon}. Ο \textlatin{Dirac} το 1928 αναζήτησε μια διαφορική εξίσωση η οποία θα ήταν 1ης τάξης ως προς το χρόνο.  \\
+\subsection{Η τρισδιάστατη εξίσωση \textlatin{Dirac}}
+Για να προκύψει μία εξίσωση 1ης τάξης αντί για την (\ref{genrel}), χρησιμοποιείται η:  
+\\
+\begin{equation}
+  E= \sqrt{c^2p^2+m^2c^4}  \stackrel{(c=1)}{=} \sqrt{p^2+m^2} 
+  \label{dir1} 
+\end{equation} 
+\\ 
+Ακολούθως, στην (\ref{dir1}) αντικαθιστώνται οι τελεστές ενέργειας και ορμής από τη (\ref{energeiaormi}). Αυτό δίνει :
+ 
+\begin{equation}
+   i\hbar \party{\Psi}{t}=\sqrt{-\hbar^2 \nabla^2\Psi+m^2\Psi}
+   \label{dir2} 
+\end{equation}
+\\Η τετραγωνική ρίζα της \ref{dir2} γράφεται με γραμμική μορφή $ \alpha p + \beta m  $ , όπου τα α και β είναι στοιχεία μιας άλγεβρας.Έτσι η  (\ref{dir2}) δίνει μία εξίσωση πρώτης τάξης ως προς το χρόνο, η οποία είναι : 
+\begin{equation}
+   i\hbar \party{\Psi}{t}=\lsbr \frac{\hbar c}{i} \lbr \alpha_1 \party{}{x^1}+\alpha_2 \party{}{x^2}+ \alpha_3 \party{}{x^3} \rbr + \beta m c^2 \rsbr
+   \label{dir3} 
+\end{equation}
+\\Η (\ref{dir3}) δεν είναι άλλη από την εξίσωση \textlatin{Dirac}. Η εξίσωση αυτή πρέπει να ικανοποιεί τις παρακάτω φυσικές ιδιότητες:
+\begin{itemize}
+  \item Να ικανοποιει την σωστή εξίσωση ενέργειας-ορμής για ένα σχετικιστικό σωματίδιο 
+  \item Να παραμένει αναλλοίωτη κάτω από τους μετασχηματισμούς \textlatin{Lorentz}
+  \item Από την εξίσωση συνέχειας να προκύπτει μια συνάρτηση για την πυκνότητα πιθανότητας, $\rho(x)= \Psi^* \Psi $
+\end{itemize}
+Ισχύει ότι: 
+\begin{align*}
+  &p^2 + m^2 = \lbr \alpha \cdot p+ \beta \cdot m \rbr \lbr \alpha \cdot p+ \beta \cdot m \rbr &\Rightarrow 
+  \\&p^2 + m^2 =(\alpha \cdot p)^2 + (\beta \alpha + \alpha \beta) +\beta^2 m^2  &\Rightarrow 
+  \\&p^2 + m^2 =(\alpha \cdot p)^2 + \{ \alpha,\beta\} +\beta^2 m^2 
+\end{align*}
+\\Από την παραπάνω σχέση προκύπτουν ο εξής ιδιότητες για τα $\alpha, \beta$ : 
+\begin{align*}
+  &(\alpha \cdot p)^2=p^2  &\{ \alpha,\beta\}=0  &  &\beta^2=1
+\end{align*}
+\\Από την πρώτη ιδιότητα προκύπτει ότι :\\ 
+\begin{equation*}
+  (\alpha \cdot p)^2=p^2 \Rightarrow  \sum \alpha _i p_i  \sum \alpha _j p_j =  \sum p_i  p_i \stackrel{(p_i p_j = p_j p_i)}{\Rightarrow}
+    \alpha _i \alpha _j + \alpha _j \alpha _i = 2 \delta _{ij}
+\end{equation*}\\
+Επειδή η χαμιλτονιανή της εξίσωσης \textlatin{Dirac} πρέπει να είναι ερμιτιανός τελεστής , τα $\alpha, \beta$ πρέπει και αυτά να είναι ερμιτιανοί. Από τα παραπάνω, επειδή $\alpha_i ^2=1 , \beta ^2 = 1 $, συνεπάγεται ότι οι ιδιοτιμές τους μπορεί να είναι μόνο $\pm 1$.\\ \\
+Ως μοναδιαίος ορίζεται εκείνος ο μετασχηματισμός που διατηρεί το εσωτερικό γινόμενο των πινάκων στους οποίους δρα.Κάθε σύνολο $\alpha_i' =U \alpha _i U^{-1}, \beta' =U \beta U^{-1}$ ,  το οποίο προκύπτει από τα αρχικά α, β και με $U$ μοναδιαίο μετασχηματισμό είναι ισοδύναμες αναπαραστάσεις της άλγεβρας \textlatin{Dirac}.Αυτό  δίνει την δυνατότητα να γράψουμε τους πίνακες α και β σε διαγώνια μορφή. \\ \\
+Επειδή  $\alpha_i ^2= \beta^2 = 1$  και $\alpha_i= -\beta \alpha_i \beta$(η τελευταία σχέση είναι άμεση συνέπεια των ιδιοτήτων των α και β που παρουσιάστηκαν παραπάνω),   για το ίχνος των δύο πινάκων θα ισχύει:\\ 
+\[ tr \alpha_i = tr \beta^2 \alpha_i =tr \beta \alpha_i \beta = -tr \alpha_i = 0 \] \\
+Από την παραπάνω σχέση και το γεγονός ότι οι ιδιοτιμές των $\alpha_i, \beta$ είναι $\pm 1 $,  προκύπτει ότι οι πίνακες αυτοί έχουν τόσα αρνητικά όσα και θετικά στοιχεία , συνεπώς είναι ζυγής διάστασης. Η ελάχιστη ζυγή διάσταση, το 2, απορρίπτεται, καθώς θα είναι οι γνωστοί πίνακες του \textlatin{Pauli}, οι οποίοι δεν ικανοποιούν τις ιδιότητες για τα α και β. Συνεπώς η αμέσως επόμενη διάσταση είναι η 4. Μπορούμε να κάνουμε την παρακάτω επιλογή για την αναπαράσταση: \\
+\begin{align*}
+  &\alpha_1 =
+  \begin{pmatrix}
+     &0 &0 &0 &1\\
+     &0 &0 &1 &0\\
+     &0 &1 &0 &0\\
+     &1 &0 &0 &0
+   \end{pmatrix}
+   & &\alpha_2 =
+  \begin{pmatrix}
+     &0 &0 &0 &-i\\
+     &0 &0 &i &0\\
+     &0 &-i &0 &0\\
+     &i &0 &0 &0
+   \end{pmatrix}\\ \\
+  &\alpha_3 =
+  \begin{pmatrix}
+     &0 &0 &1 &0\\
+     &0 &0 &0 &-1\\
+     &1 &0 &0 &0\\
+     &0 &-1 &0 &0
+   \end{pmatrix}
+   & &\beta=
+  \begin{pmatrix}
+     &1 &0 &0 &0\\
+     &0 &1 &0 &0\\
+     &0 &0 &-1 &0\\
+     &0 &0 &0 &-1
+   \end{pmatrix}
+\end{align*}\\ 
+Η παραπάνω αναπαράσταση μπορεί να γραφεί συνοπτικά : \\
+\begin{align*}
+  &\alpha_i =
+  \begin{pmatrix}
+    &0 &\sigma_i \\
+    &\sigma_i &0 
+  \end{pmatrix}
+  & &\beta=
+  \begin{pmatrix}
+    &1 &0 &0 &0\\
+    &0 &1 &0 &0\\
+    &0 &0 &-1 &0\\
+    &0 &0 &0 &-1
+  \end{pmatrix}
+\end{align*}\\ 
+\pagebreak
+%=====================================================================================================
+\subsection{Λύσεις εξίσωσης \textlatin{Dirac}-Ελεύθερη κίνηση}
+Στην παράγραφο αυτή μελετάται η κίνηση ενός σωματιδίου που υπακούει στην εξίσωση \textlatin{Dirac}, σε χώρο που δεν υπάρχουν δυναμικά, για το λόγο αυτό θα αναζητηθούν οι λύσεις της εξίσωσης, οι οποίες θα πρέπει να είναι της ακόλουθης μορφής(Ε η ενέργεια): 
+\[ 
+\Psi(\vec{r},t)=\Psi e^{-iEt/\hbar} 
+\]
+Γίνεται η αντικατάσταση στην εξίσωση (\ref{dir3}) και $\Psi$, η οποία έχει 4 συνιστώσες,  χωρίζεται επιπλέον σε δύο σπίνορες $\phi$ και $\chi$, που έχουν δυο συντισώσες ο καθένας.Έτσι, η  (\ref{dir3}) γράφεται με την μορφή πινάκων ως εξής: 
+
+\begin{equation*}
+  \begin{split}
+    &i\hbar \party{}{t}e^{-iEt/\hbar}
+    \begin{pmatrix}
+      &\phi\\
+      &\chi
+    \end{pmatrix}
+    = c
+    \begin{pmatrix}
+      &0 &\sigma\\
+      &\sigma &0 
+    \end{pmatrix} 
+    \cdot p
+    \begin{pmatrix}
+      &\phi\\
+      &\chi
+    \end{pmatrix}  
+    e^{-iEt/\hbar}+ m_0c^2 
+    \begin{pmatrix}
+      &I &0\\
+      &0 &-I 
+    \end{pmatrix}
+    \begin{pmatrix}
+      &\phi\\
+      &\chi
+    \end{pmatrix} 
+    e^{-iEt/\hbar} \\
+    %-------------------------------------------------------------------------- 
+    &\Rightarrow E 
+    \begin{pmatrix}
+      &\phi\\
+      &\chi
+    \end{pmatrix}
+    = c
+    \begin{pmatrix}
+      &0 &\sigma\\
+      &\sigma &0 
+    \end{pmatrix} 
+    \cdot p
+    \begin{pmatrix}
+      &\phi\\
+      &\chi
+    \end{pmatrix}  
+    + m_0c^2 
+    \begin{pmatrix}
+      &I &0\\
+      &0  &-I 
+    \end{pmatrix}
+    \begin{pmatrix}
+      &\phi\\
+      &\chi
+    \end{pmatrix}
+    \Rightarrow 
+ \end{split}
+\end{equation*}
+ 
+\begin{equation*}
+  \begin{split}
+   %-------------------------------------------------------------------------- 
+    &E\phi = c \sigma \cdot p \chi+ m_0 c^2 \phi\\ 
+    &E\chi = c \sigma \cdot p \phi- m_0 c^2 \chi 
+  \end{split}
+\end{equation*}\\
+Οι καταστάσεις δεδομένης ορμής γράφονται : 
+\begin{equation*}
+  \begin{pmatrix}
+    &\phi\\
+    &\chi
+  \end{pmatrix}
+  = 
+  \begin{pmatrix}
+    &\phi_0\\
+    &\chi_0
+  \end{pmatrix} 
+ e^{-ipr/\hbar }
+\end{equation*}\\
+Στην παραπάνω εξίσωση ο τελεστής της ορμής αντικαταστάθηκε από τις ιδιοτιμές του. Έτσι οι εξισώσεις παίρνουν τελικά την μορφή : \\
+\begin{equation*}
+  \begin{split}
+   %-------------------------------------------------------------------------- 
+    &E\phi_0 = c \sigma \cdot p \chi_0+ m_0 c^2 \phi_0\\ 
+    &E\chi_0 = c \sigma \cdot p \phi_0- m_0 c^2 \chi_0  \Rightarrow
+  \end{split}
+\end{equation*}
+
+\begin{equation}
+  \begin{split}
+   %-------------------------------------------------------------------------- 
+    &(E-m_0c^2)I\phi_0 - c \sigma \cdot p \chi_0 = 0 \\ 
+    &(E+m_0 c^2)I\chi_0 - c \sigma \cdot p \phi_0 = 0 
+    \label{somedireq}
+  \end{split}
+\end{equation}
+
+Το παραπάνω σύστημα έχει λύση μόνο αν η ορίζουσα των συντελεστών του μηδενίζεται. Με αυτή την απαίτηση και χρησιμοποιόντας την σχέση (\ref{equationforcalc})\footnote{Τα Α και Β σ'αυτη τη περίπτωση είναι πίνακες και Ι είναι ο μοναδιαίος πινακας. Ο συμβολισμός του μοναδιαίου πινακα με Ι συνεχίζεται και στο υπόλοιπο κείμενο.}, βρίσκονται οι ιδιοτιμές της ενέργειας(\ref{diracenergy}). \\
+\begin{equation} 
+  (\sigma \cdot A) (\sigma \cdot B) = A \cdot B I +i\sigma \cdot (A \times B) 
+  \label{equationforcalc}
+\end{equation}
+\\
+\begin{equation} 
+  E= \pm c\sqrt{p^2+m_0c^2}
+  \label{diracenergy}
+\end{equation}\\
+Παρατηρείται ότι και στην περίπτωση της εξίσωσης \textlatin{Dirac} υπάρχουν τόσο θετικές όσο και αρνητικές λύσεις για την ενέργεια,oι οποίες ερμηνεύονται απο την υπαρξη αντισωματιδίου.
+Λύνοντας την δεύτερη από τις  εξισώσεις (\ref{somedireq}) ως προς $\chi_0$ (\ref{somesoldir}) και παίρνοντας $\phi_0= u $ όπου $u^{\dagger}u=1$, προκύπτουν οι λύσεις( $\lambda=\pm 1$) : \\
+\begin{equation}
+  \chi_0 =\frac{c \sigma \cdot p }{m_0 c^2 + E}\phi_0
+  \label{somesoldir}
+\end{equation}\\
+\begin{equation} 
+  \Psi_{p,\lambda} =N 
+    \begin{pmatrix}
+    &u\\
+    &\frac{c(\sigma \cdot p )}{m_0 c^2 + \lambda E_p}u
+    \end{pmatrix}
+    e^{i(pr-\lambda E_p t)/\hbar}
+  \label{freesolutiondir}
+\end{equation}\\
+Ν είναι ο συντελεστης κανονικοποίησης και βρίσκεται εφαρμόζοντας τη συνθήκη :\\ 
+\[ \int \Psi_{p \lambda}^{\dagger} \Psi_{p' \lambda'} d\tau=\delta_{\lambda \lambda'} \delta(p-p') \]\\
+Οπότε προκύπτει:\\
+\[N=\sqrt{\frac{m_0c^2+\lambda E_p}{2 \lambda E_p}} \]\\
+Απο τα παραπάνω προκύπτει ότι για κάθε ιδιοτιμή της ορμής θα υπάρχουν δύο λύσεις μια με θετική και μια με αρνητική ενέργεια. Επιπλέον οι λύσεις της εξίσωσης, μπορούν να εξεταστούν με την χρήση του τελεστή της ελικότητας(\ref{helicity})\footnote{Εδώ με $p$ συμβολίζεται και πάλι ο τελεστής της ορμής}, που δίνει την προβολή του σπίν στον άξονα της ορμής. \\
+\begin{equation}
+  \Lambda=\frac{\hbar}{2}\Sigma \frac{p}{|p|} 
+  \label{helicity}
+\end{equation}\\
+Όπου $\Sigma$ είναι η γενίκευση του τελεστή του σπίν σε τέσσερις διαστάσεις. Οι ιδιοτιμές της ελικότητας (στην περίπτωση που η διεύθυνση διάδοσης του κύματος του σωματιδίου είναι στον άζονα $z$) είναι: 
+\begin{align*}
+  &\begin{pmatrix}
+    &u_1\\
+     &0
+   \end{pmatrix},
+  &\begin{pmatrix}
+     &u_{-1}\\
+     &0
+   \end{pmatrix},
+  & & \begin{pmatrix}
+       &0\\
+       &u_1
+     \end{pmatrix},
+  & &\begin{pmatrix}
+     &0\\
+     &u_{-1}
+   \end{pmatrix} \\ \\
+  &u_{1}=
+  \begin{pmatrix}
+    &1\\
+    &0
+  \end{pmatrix},
+  &u_{-1}=
+  \begin{pmatrix}
+    &0\\
+    &1
+  \end{pmatrix}
+\end{align*}\\
+Οι λύσεις (\ref{freesolutiondir})τελικά παίρνουν την μορφή:
+\begin{equation*} 
+  \Psi_{p,\lambda,+1/2} =N 
+  \begin{pmatrix}
+    &\begin{pmatrix} &1 \\ &0 \end{pmatrix}\\
+    &\frac{c(\sigma \cdot p )}{m_0 c^2 + \lambda E_p}\begin{pmatrix} &1 \\ &0 \end{pmatrix}
+  \end{pmatrix}
+  e^{i(pr-\lambda E_p t)/\hbar}
+\end{equation*}\\
+%---------------------------------------------------------------------------------------
+\begin{equation*} 
+  \Psi_{p,\lambda,-1/2} =N 
+  \begin{pmatrix}
+    &\begin{pmatrix} &0 \\ &1 \end{pmatrix}\\
+    &\frac{c(\sigma \cdot p )}{m_0 c^2 + \lambda E_p}\begin{pmatrix} &0 \\ &1 \end{pmatrix}
+  \end{pmatrix}
+  e^{i(pr-\lambda E_p t)/\hbar}
+\end{equation*}\\
+Ν είναι ο συντελεστης κανονικοποίησης και βρίσκεται εφαρμόζοντας τη συνθήκη :\\ 
+\[ \int \Psi_{p, \lambda,s_z'}^{\dagger} \Psi_{p', \lambda',s_z'} d\tau=\delta_{\lambda \lambda'} \delta(p-p')\delta(p_z-p_z') \]\\
+%=====================================================================================================
+\subsection{Eξίσωση \textlatin{Dirac} παρουσία ηλεκτρομαγνητικού πεδίου}
+Θεωρείται διανυσματικό δυναμικό, $A^{\mu} = \{ A_0(x),A(x)\}$. Η ελάσσονα αντικατάσταση που δίνεται από την σχέση (\ref{tensormin}) η οποία σε πολλά σημεία παρακάτω θα συμβολίζεται με $\hat{\Pi}$ χάριν συντομίας.H αντικατάσταση αυτή εξασφαλίζει το  αναλλοίωτο της εξίσωσης  κάτω από μετασχηματισμούς  βαθμίδας. Πραγματοποιώντας την, η εξίσωση περιλαμβάνει τις αλληλεπιδράσεις με τα πεδία και παίρνει την ακόλουθη μορφή:\\
+\begin{align}
+  \notag &c \lbr i\hbar \party{}{ct}-\frac{e}{c}A_0 \rbr \Psi =\lsbr c\alpha \cdot \lbr p- \frac{e}{c} A\rbr +\beta m_0 c^2 \rsbr \Psi &\Rightarrow \\
+  &  i\hbar \party{\Psi}{t} =\lsbr c\alpha \cdot \lbr p- \frac{e}{c} A\rbr +eA_0 +\beta m_0 c^2 \rsbr \Psi
+  \label{emfielddirac}
+\end{align}\\
+Είναι δυνατό σε αυτή την περίπτωση οι λύσεις να είναι της παρακάτω μορφής. Η ενέργεια αντικαθιστάτε απο την ενέργεια ηρεμίας που είναι και η υψηλότερη ενέργεια.
+\begin{equation*}
+  \Psi= 
+  \begin{pmatrix}
+    &\phi \\
+    &\chi
+  \end{pmatrix}
+  e^{i\epsilon t/\hbar}= 
+  \begin{pmatrix}
+    &\phi \\
+    &\chi
+  \end{pmatrix}
+  e^{-i m_0 c^2 t / \hbar}
+\end{equation*}\\
+Η εξίσωση  (\ref{emfielddirac}) παίρνει τη μορφή :\\ 
+\begin{equation}
+  \begin{split}
+  i\hbar \party{}{t} 
+  \begin{pmatrix}
+    &\phi\\
+    &\chi
+  \end{pmatrix} 
+  \cdot e^{-i m_0 c^2 t / \hbar} &= 
+  \begin{pmatrix}
+    &c \sigma \cdot \hat{\Pi}  &\chi \\
+    &c \sigma \cdot \hat{\Pi}  &\phi
+  \end{pmatrix} 
+  \cdot e^{-i m_0 c^2 t / \hbar}
+  + e A_0
+  \begin{pmatrix}
+    &\phi\\
+    &\chi
+  \end{pmatrix}
+  \cdot e^{-i m_0 c^2 t / \hbar}\\
+   &+m_0 c^2 
+  \begin{pmatrix}
+    &\phi\\
+    &-\chi
+  \end{pmatrix}
+  \cdot e^{-i m_0 c^2 t / \hbar}
+  \end{split}
+  \label{direq1}
+\end{equation}\\
+Υπολογίζεται στη συνέχεια ο πρώτος όρος της εξίσωσης (\ref{direq1}):\\
+\begin{equation*}
+  \begin{split}
+    i\hbar \party{}{t} 
+    \begin{pmatrix}
+      &\phi\\
+      &\chi
+    \end{pmatrix} 
+    e^{-i m_0 c^2 t / \hbar} &=
+    i\hbar \party{}{t} 
+    \begin{pmatrix}
+      &\phi\\
+      &\chi
+    \end{pmatrix} 
+    e^{-i m_0 c^2 t / \hbar}+   
+    \begin{pmatrix}
+      &\phi\\
+      &\chi
+    \end{pmatrix} 
+    i\hbar \party{ e^{-i m_0 c^2 t / \hbar}}{t}= \\ 
+    %-------------------------------------------------
+    &=i\hbar \party{}{t} 
+    \begin{pmatrix}
+      &\phi\\
+      &\chi
+    \end{pmatrix}
+    e^{-i m_0 c^2 t / \hbar}+   
+    m_0c^2
+    \begin{pmatrix}
+      &\phi\\
+      &\chi
+    \end{pmatrix} 
+    e^{-i m_0 c^2 t / \hbar}
+  \end{split}
+\end{equation*}   \\
+Τέλος γίνεται αντικατασταστη του τελευταίου  αποτελέσματος στην εξίσωση (\ref{direq1}):
+%-----------------------------------------------------------------------------------
+\begin{align}
+  \notag  &i\hbar \party{}{t} 
+  \begin{pmatrix}
+    &\phi\\
+    &\chi
+  \end{pmatrix}
+  + m_0c^2  
+  \begin{pmatrix}
+    &\phi\\
+    &\chi
+  \end{pmatrix} 
+   = 
+  \begin{pmatrix}
+    &c \sigma \cdot \hat{\Pi}  &\chi \\
+    &c \sigma \cdot \hat{\Pi}  &\phi
+  \end{pmatrix} 
+  \cdot 
+  + e A_0
+  \begin{pmatrix}
+    &\phi\\
+    &\chi
+  \end{pmatrix}
+  +m_0 c^2 
+  \begin{pmatrix}
+    &\phi\\
+    &-\chi
+  \end{pmatrix}\Rightarrow\\
+  %---------------------------------------
+  &i\hbar \party{}{t} 
+  \begin{pmatrix}
+    &\phi\\
+    &\chi
+  \end{pmatrix}
+    = 
+  \begin{pmatrix}
+    &c \sigma \cdot \hat{\Pi}  &\chi \\
+    &c \sigma \cdot \hat{\Pi}  &\phi
+  \end{pmatrix} 
+  \cdot 
+  + e A_0
+  \begin{pmatrix}
+    &\phi\\
+    &\chi
+  \end{pmatrix}
+  -2m_0 c^2 
+  \begin{pmatrix}
+    &0\\
+    &-\chi
+  \end{pmatrix}
+  \label{diremfinal} 
+\end{align}
+Στην επόμενη παράγραφο, η εξίσωση (\ref{diremfinal}) θα χρησιμοποιηθεί για να να υπολογιστεί το μη σχετικιστικό όριο της εξίσωσης \textlatin{Dirac}, παρουσία ηλεκτρομαγνητικού πεδίου. 
+\pagebreak
